@@ -1,13 +1,38 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Variables */
+:root{
+  --PrimaryFont : 'Fira Code';
+  --SecondaryFont : 'Lato';
+  --PrimaryColor:#F2AF29;
+  --PrimaryColor-op:rgba(242, 175, 41, 0.77);
+  --SecondaryColor:#FDFFFC;
+  --Color-3:#020100;
+  --Color-3-10per:rgba(2, 1, 0, 0.1);
+  --Color-4:#7A9E9F;
+  --Color-5:#235789;
+}
+*,
+*::after,
+*::before {
+  padding:0;
+  margin:0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 50%; /*8px/16px = 50% --> 1rem = 8px */
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--PrimaryFont) ;
+  line-height:1.6182;
+  overflow-x:hidden ;
+}
+a {text-decoration:none ;color:inherit;}
+
+::selection{
+  background-color: var(--PrimaryColor);
+  color:var(--SecondaryColor);
 }
