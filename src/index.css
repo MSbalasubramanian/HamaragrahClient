@@ -24,6 +24,7 @@ html {
   box-sizing: border-box;
   font-size: 50%; /*8px/16px = 50% --> 1rem = 8px */
   scroll-behavior: smooth;
+  
 }
 body {
   font-family: var(--PrimaryFont) ;
@@ -35,4 +36,16 @@ a {text-decoration:none ;color:inherit;}
 ::selection{
   background-color: var(--PrimaryColor);
   color:var(--SecondaryColor);
+}
+
+@media only screen and (max-width:81.25em) { /* break point 1300px*/
+  html {
+    font-size:43.75%; /* 7px /16px --> 1rem = 7px*/
+  }
+}
+
+@media only screen and (max-width:67.5em) { /* break point 1080px*/
+  html {
+    font-size:37.5%; /* 7px /16px --> 1rem = 7px*/
+  }
 }

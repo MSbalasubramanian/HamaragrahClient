@@ -6,9 +6,10 @@ import { FaWhatsapp } from 'react-icons/fa';
 const SideBarFloat = _ => (
   <SideBarFloatStyle>
     <IconContext.Provider value={{ color:'#235789' }}>
-      <a href=""><FiMail /></a>
-      <a href=""><FiInstagram /></a>
-      <a href=""><FaWhatsapp /></a> 
+      <a href="mailto:info@hamaraghar.co.in
+"><FiMail /></a>
+      <a href="#"><FiInstagram /></a>
+      <a href="https://wa.me/918971744523?text=Hai%20Sir%2C%20I%20like%20to%20know%20the%20details%20about%20what%20you%20mention%20in%20the%20website" target='_blank'><FaWhatsapp /></a> 
     </IconContext.Provider>
   </SideBarFloatStyle>
 );

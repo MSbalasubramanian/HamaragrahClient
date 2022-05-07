@@ -17,6 +17,10 @@ const ContactStyle = styled.section`
     flex-direction:column ;
     justify-content:center ;
     align-items:center ;
+    @media only screen and (max-width:60em) { /* break point 950px*/
+      margin-top:3rem;
+      margin-bottom:-5rem;
+    }
     & > span {
       font-size:1.7rem;
     }
@@ -43,14 +47,17 @@ const ContactStyle = styled.section`
     & > div{
       display: flex;
       flex-direction: column;
+      @media only screen and (max-width:60em) { /* break point 950px*/
+        margin-bottom:5rem;
+      }
     }
 
         
     &  label {
       font-size:1.8rem;
-      margin-right:6rem;
-      position:relative ;
-      
+      @media only screen and (max-width:60em) { /* break point 950px*/
+        margin-bottom:2rem;
+      }
     }
 
     & input {
@@ -109,13 +116,33 @@ const ContactStyle = styled.section`
       border-radius:1rem;
       margin-top:-8rem;
       width:15rem;
+      height:5rem;
+      font-size:1.6rem;
+      transition:all 250ms ease-in-out;
+      &:hover{
+        background-color:var(--PrimaryColor-op);
+        
+      }
+      @media only screen and (max-width:81.25em) { /* break point 1300px*/
+        width:20rem;
+      }
+      @media only screen and (max-width:67.5em) { /* break point 1300px*/
+        height:4rem;
+      }
     }
   }
 
   & > img {
+    width:43.75rem;
+    height:62.5rem;
     grid-column:2/3 ;
     grid-row:2/3 ;
     margin:10rem 0;
+    @media only screen and (max-width:60em) { /* break point 950px*/
+      width:37.5rem;
+      height:50rem;
+      /* margin:6rem 0; */
+    }
   }
 `;
 

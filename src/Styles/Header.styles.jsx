@@ -35,6 +35,9 @@ const HeaderStyle = styled.header`
         margin:3rem;
         color:var(--SecondaryColor);
         font-size:1.75rem;
+        @media only screen and (max-width:60em) { /* break point 950px*/
+        font-size:1.85rem;
+        }
         &:hover {
           color:var(--PrimaryColor);
         }
@@ -43,6 +46,9 @@ const HeaderStyle = styled.header`
           padding:1.1rem;
           border-radius:1rem;
           transition:all 250ms ease-in;
+          @media only screen and (max-width:60em) { /* break point 950px*/
+            padding:1.3rem;
+          }
           &:hover{
             color:var(--SecondaryColor);
             background-color:var(--PrimaryColor-op);
@@ -76,6 +82,10 @@ const HeaderStyle = styled.header`
       background-color:var(--PrimaryColor);
       padding:1.1rem;
       border-radius:1rem;
+      @media only screen and (max-width:60em) { /* break point 950px*/
+        font-size:1.9rem;
+        padding:1.4rem 2rem;
+      }
       &:hover{
         color:var(--SecondaryColor);
         background-color:var(--PrimaryColor-op);
