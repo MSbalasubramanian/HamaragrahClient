@@ -9,7 +9,7 @@ const SideBarFloat = _ => (
       <a href="mailto:info@hamaraghar.co.in
 "><FiMail /></a>
       <a href="#"><FiInstagram /></a>
-      <a href="https://wa.me/918971744523?text=Hai%20Sir%2C%20I%20like%20to%20know%20the%20details%20about%20what%20you%20mention%20in%20the%20website" target='_blank'><FaWhatsapp /></a> 
+      <a href="https://wa.me/918971744523?text=Hai%20Sir%2C%20I%20like%20to%20know%20the%20details%20about%20what%20you%20mention%20in%20the%20website" target='blank'><FaWhatsapp /></a> 
     </IconContext.Provider>
   </SideBarFloatStyle>
 );
@@ -25,6 +25,9 @@ const SideBarFloatStyle = styled.aside`
   justify-content:center ;
   align-items:center ;
   margin: 3rem;
+  @media only screen and (max-width:34.375em) { /* break point 550px*/
+    display:none;
+  }
   & svg {
     width:3rem;
     height:3rem;

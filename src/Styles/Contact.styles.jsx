@@ -8,7 +8,12 @@ const ContactStyle = styled.section`
   display:grid;
   grid-template-columns:1fr max-content .8fr;
   grid-template-rows:max-content 1fr ;
-
+  @media only screen and (max-width:34.375em) { /* break point 600px*/
+  grid-column:1/-1;
+  }
+  @media only screen and (max-width:25em) { /* break point 400px*/
+     grid-template-columns:1fr;
+  }
   & > div {
     grid-column:1/-1 ;
     grid-row:1/2 ;
@@ -44,6 +49,9 @@ const ContactStyle = styled.section`
     grid-column-gap:8rem ;
     justify-content:center ;
     align-items:center ;
+    @media only screen and (max-width:25em) { /* break point 400px*/
+     grid-column:1/-1 ;
+    }
     & > div{
       display: flex;
       flex-direction: column;
@@ -143,6 +151,17 @@ const ContactStyle = styled.section`
       height:50rem;
       /* margin:6rem 0; */
     }
+    @media only screen and (max-width:31.25em) { /* break point 500px*/
+      width:30rem;
+      height:45rem; 
+      margin-left:-8rem;
+      
+    }
+    @media only screen and (max-width:25em) { /* break point 400px*/
+      display:none;
+    }
+    
+    
   }
 `;
 

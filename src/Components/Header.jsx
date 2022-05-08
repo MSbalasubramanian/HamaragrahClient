@@ -1,9 +1,16 @@
 import HeaderStyle from "../Styles/Header.styles";
 import { IconContext } from 'react-icons';
 import { HiChevronDoubleDown } from 'react-icons/hi';
+import { GiHamburgerMenu } from 'react-icons/gi';
 import logo from '../images/logo.png';
 const Header = _ => (
   <HeaderStyle id="head">
+    <section className="burgerMenu">
+      <img src={logo} alt="HamaragrahLogo" />
+      <IconContext.Provider value={{ color:'#F2AF29' }}>
+        <GiHamburgerMenu></GiHamburgerMenu>
+      </IconContext.Provider>
+    </section>
     <nav>
       <img src={logo} alt="HamaragrahLogo"/>
       <div>
@@ -14,6 +21,7 @@ const Header = _ => (
         <a href="#con">Contact us</a>
       </div>
     </nav>
+    
     <div>
       <p>Construction <span>Builds</span> the </p>
       <p>Future</p>

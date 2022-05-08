@@ -7,6 +7,26 @@ const AboutUsStyle = styled.section`
   grid-template-columns:1fr 1fr;
   grid-template-rows:1fr ;
   align-items:center ;
+  @media only screen and (max-width:46.875em) { /* break point 750px*/
+    grid-template-columns:max-content 1fr;
+  }
+  @media only screen and (max-width:40.625em) { /* break point 650px*/
+    /* margin-top: -5rem; */
+  }
+  @media only screen and (max-width:34.375em) { /* break point 550px*/
+    display:flex;
+  }
+  @media only screen and (max-width:34.375em) { /* break point 600px*/
+  grid-column:1/-1;
+  }
+  @media only screen and (max-width:31.25em) { /* break point 500px*/
+    overflow-x:hidden ;
+  }
+  @media only screen and (max-width:25em) { /* break point 400px */
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+  }
   & img {
     width:62.5rem;
     height:62.5rem;/* change height to alter the illustration */
@@ -16,12 +36,30 @@ const AboutUsStyle = styled.section`
     @media only screen and (max-width:60em) { /* break point 950px*/
       height:40rem;
     }
+    @media only screen and (max-width:34.375em) { /* break point 550px*/
+      height:30rem;
+    }
+    @media only screen and (max-width:31.25em) { /* break point 500px*/
+      height:35rem;
+    }
+    @media only screen and (max-width:25em) { /* break point 400px */
+      display:none;
+    }
 
   }
   &>section {
     grid-column:2/3 ;
     grid-row:1/-1 ;
     padding:5rem 4rem;
+    @media only screen and (max-width:34.375em) { /* break point 550px*/
+      width:50rem;
+      height:64rem;
+      padding:5rem 10rem 5rem 0;
+    }
+    @media only screen and (max-width:25.625em) { /* break point 410px */
+     margin-right:10rem;
+    }
+    
     &>p:first-child {
       /* about us */
       font-size:2rem;
@@ -43,6 +81,10 @@ const AboutUsStyle = styled.section`
         @media only screen and (max-width:60em) { /* break point 950px*/
           letter-spacing:.25rem ;
           margin-bottom:3rem; 
+        }
+        @media only screen and (max-width:31.25em) { /* break point 500px*/
+          font-size:3.6rem;
+          letter-spacing:.45rem ;
         }
       }
       

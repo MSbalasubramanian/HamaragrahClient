@@ -46,6 +46,24 @@ a {text-decoration:none ;color:inherit;}
 
 @media only screen and (max-width:67.5em) { /* break point 1080px*/
   html {
-    font-size:37.5%; /* 7px /16px --> 1rem = 7px*/
+    font-size:37.5%; /* 6px /16px --> 1rem = 6px*/
   }
 }
+@media only screen and (max-width:56.25em) { /* break point 900px*/
+  html {
+    font-size:31.25%; /* 5px /16px --> 1rem = 5px*/
+  }
+}
+@media only screen and (max-width:46.875em) { /* break point 750px*/
+  html {
+    font-size:28.125%; /* 4.5px /16px --> 1rem = 4.5px*/
+  }
+}
+@media only screen and (max-width:37.5em) { /* break point 600px*/
+  html {
+    font-size:25%; /* 5px /16px --> 1rem = 5px*/
+  }
+}
+
+
+
