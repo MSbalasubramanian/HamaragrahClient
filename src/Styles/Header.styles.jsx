@@ -6,6 +6,7 @@ const jumpAnimation = keyframes`
   40%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
   100% {transform: translate3d(0,100%,0) scale3d(1.5,.7,1);}
 `;
+
 const HeaderStyle = styled.header`
   grid-column:1/-1;
   grid-row:1/2;
@@ -107,6 +108,7 @@ const HeaderStyle = styled.header`
       background-color:var(--PrimaryColor);
       padding:1.1rem;
       border-radius:1rem;
+      transform-origin: 50% 5em;
       @media only screen and (max-width:60em) { /* break point 950px*/
         font-size:1.9rem;
         padding:1.4rem 2rem;
@@ -127,6 +129,10 @@ const HeaderStyle = styled.header`
       width:4rem;
       height:4rem;
       animation: ${jumpAnimation} .5s linear alternate infinite ;
+       @media only screen and (max-width:29.375em) { /* break point 470px*/ 
+        z-index: -1;
+        position: absolute;
+      } 
     }
   }
   .burgerMenu {
@@ -134,7 +140,7 @@ const HeaderStyle = styled.header`
     @media only screen and (max-width:29.375em) { /* break point 470px */
     grid-column:1/-1;
     grid-row:1/2;
-     display:flex;  
+     display:flex;
      justify-content:space-between ;
      align-items:center;
      padding:0 4rem;
@@ -149,8 +155,10 @@ const HeaderStyle = styled.header`
       height:4rem;
       cursor: pointer;
     }
+    
     @media only screen and (max-width:25.625em) { /* break point 410px */
      margin-right:2rem;
+     
     }
   }
 `;

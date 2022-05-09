@@ -12,6 +12,7 @@
   --Color-3-10per:rgba(2, 1, 0, 0.1);
   --Color-4:#7A9E9F;
   --Color-5:#235789;
+  --Color-5-op:rgba(35, 88, 137, 0.8);
 }
 *,
 *::after,
